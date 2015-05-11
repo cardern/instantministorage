@@ -1,0 +1,35 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media all and (min-width: 768px) {
+    #navbar-contact {
+        border: 2px solid $brand-success;
+        border-radius: 0px;
+        color: $brand-success;
+        background-color: white;
+        padding: 6px 10px 6px 10px;
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+}
+
+.intro{
+	height:100vh;
+}
