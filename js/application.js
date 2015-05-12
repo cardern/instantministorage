@@ -18,5 +18,14 @@ $(document).ready(function() {
       // itemsMobile : false
  
   });
+
+    //Defeat spambots
+
+    var email1 = "info";
+    var email2 = "@";
+    var email3 = "instantministorage.com";
+    var email4 = email1 + email2 + email3;
+    $('.send-now').html("<a class='send-now' href=" + "mail" + "to:" + email1 + email2 + email3 + ">Email Us</a>");
+    $('.email-address').html(email4);
  
 });

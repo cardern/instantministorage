@@ -24,7 +24,7 @@ p {
 .spacer {
     width: 100px;
     height: 2px;
-    background: black;
+    background: $gray-light;
     margin: auto;
 }
 
@@ -67,12 +67,14 @@ p {
     height: 100vh;
 }
 
-#about {
+#about,#sales,#contact {
     background: white;
 }
 
 .row {
     @extend .text-center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .container-image {
