@@ -1,21 +1,42 @@
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
-
 // Import custom Bootstrap variables
 @import "bootstrap-variables";
-
 // Import Bootstrap for Sass
 @import "bootstrap";
+a {
+    color: $brand-success;
+}
+
+a:hover {
+    text-decoration: none;
+    color: lighten($brand-success, 13.5%);
+}
+
+body {
+    background: $gray-lighter;
+}
+
+p {
+    font-size: 18px;
+}
+
+.spacer {
+    width: 100px;
+    height: 2px;
+    background: black;
+    margin: auto;
+}
 
 @media (min-width: 768px) {
-  .navbar-nav {
-    width: 100%;
-    text-align: center;
-  }
-  .navbar-nav > li {
-    float: none;
-    display: inline-block;
-  }
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
 }
 
 @media all and (min-width: 768px) {
@@ -30,6 +51,36 @@
     }
 }
 
-.intro{
-	height:100vh;
+.ims-header {
+    font-size: 64px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.header-img {
+    float: right;
+    height: 150px;
+}
+
+#intro {
+    height: 100vh;
+}
+
+#about {
+    background: white;
+}
+
+.row {
+    @extend .text-center;
+}
+
+.container-image {
+    width: 400px;
+    border: 1px solid $gray-lighter;
+}
+
+.img-padding{
+	padding-top: 30px;
+	padding-bottom: 30px;
 }

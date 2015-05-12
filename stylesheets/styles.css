@@ -1972,7 +1972,7 @@ mark,
 }
 
 /* line 92, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_type.scss */
-.text-center {
+.text-center, .row {
   text-align: center;
 }
 
@@ -8567,21 +8567,50 @@ button.close {
     display: none !important;
   }
 }
+/* line 7, ../sass/styles.scss */
+a {
+  color: #5cb85c;
+}
+
+/* line 11, ../sass/styles.scss */
+a:hover {
+  text-decoration: none;
+  color: #8ccd8c;
+}
+
+/* line 16, ../sass/styles.scss */
+body {
+  background: #eeeeee;
+}
+
+/* line 20, ../sass/styles.scss */
+p {
+  font-size: 18px;
+}
+
+/* line 24, ../sass/styles.scss */
+.spacer {
+  width: 100px;
+  height: 2px;
+  background: black;
+  margin: auto;
+}
+
 @media (min-width: 768px) {
-  /* line 11, ../sass/styles.scss */
+  /* line 32, ../sass/styles.scss */
   .navbar-nav {
     width: 100%;
     text-align: center;
   }
 
-  /* line 15, ../sass/styles.scss */
+  /* line 36, ../sass/styles.scss */
   .navbar-nav > li {
     float: none;
     display: inline-block;
   }
 }
 @media all and (min-width: 768px) {
-  /* line 22, ../sass/styles.scss */
+  /* line 43, ../sass/styles.scss */
   #navbar-contact {
     border: 2px solid #5cb85c;
     border-radius: 0px;
@@ -8592,7 +8621,38 @@ button.close {
     margin-top: 10px;
   }
 }
-/* line 33, ../sass/styles.scss */
-.intro {
+/* line 54, ../sass/styles.scss */
+.ims-header {
+  font-size: 64px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 61, ../sass/styles.scss */
+.header-img {
+  float: right;
+  height: 150px;
+}
+
+/* line 66, ../sass/styles.scss */
+#intro {
   height: 100vh;
+}
+
+/* line 70, ../sass/styles.scss */
+#about {
+  background: white;
+}
+
+/* line 78, ../sass/styles.scss */
+.container-image {
+  width: 400px;
+  border: 1px solid #eeeeee;
+}
+
+/* line 83, ../sass/styles.scss */
+.img-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
