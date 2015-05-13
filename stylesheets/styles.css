@@ -8662,3 +8662,8 @@ p {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+/* line 90, ../sass/styles.scss */
+.table tbody > tr > td.vert-align {
+  vertical-align: middle;
+}
