@@ -8623,47 +8623,66 @@ p {
 }
 /* line 54, ../sass/styles.scss */
 .ims-header {
-  font-size: 64px;
+  font-size: 48px;
   height: 180px;
   display: flex;
   align-items: center;
 }
 
-/* line 61, ../sass/styles.scss */
+@media all and (min-width: 1180px) {
+  /* line 62, ../sass/styles.scss */
+  .ims-header {
+    font-size: 64px;
+  }
+}
+/* line 67, ../sass/styles.scss */
 .header-img {
   float: right;
-  height: 150px;
-}
-
-/* line 66, ../sass/styles.scss */
-#intro {
-  height: 100vh;
-}
-
-/* line 70, ../sass/styles.scss */
-#about, #sales, #contact {
-  background: white;
+  height: auto;
+  max-height: 150px;
+  max-width: 100%;
 }
 
 /* line 74, ../sass/styles.scss */
+#intro {
+  height: 100vh;
+  min-height: 730px;
+}
+
+@media all and (max-width: 1180px) {
+  /* line 80, ../sass/styles.scss */
+  .intro-body {
+    font-size: 30px;
+  }
+}
+/* line 85, ../sass/styles.scss */
+#about,
+#sales,
+#contact {
+  background: white;
+}
+
+/* line 91, ../sass/styles.scss */
 .row {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-/* line 80, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .container-image {
   width: 400px;
+  max-width: 90%;
   border: 1px solid #eeeeee;
 }
 
-/* line 85, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 .img-padding {
   padding-top: 30px;
   padding-bottom: 30px;
+  max-width: 100%;
 }
 
-/* line 90, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 .table tbody > tr > td.vert-align {
   vertical-align: middle;
 }

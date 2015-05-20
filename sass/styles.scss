@@ -52,22 +52,39 @@ p {
 }
 
 .ims-header {
-    font-size: 64px;
+    font-size: 48px;
     height: 180px;
     display: flex;
     align-items: center;
 }
 
+@media all and (min-width: 1180px) {
+    .ims-header {
+        font-size: 64px;
+    }
+}
+
 .header-img {
     float: right;
-    height: 150px;
+    height: auto;
+    max-height: 150px;
+    max-width: 100%;
 }
 
 #intro {
     height: 100vh;
+    min-height: 730px;
 }
 
-#about,#sales,#contact {
+@media all and (max-width: 1180px) {
+    .intro-body {
+        font-size: 30px;
+    }
+}
+
+#about,
+#sales,
+#contact {
     background: white;
 }
 
@@ -79,14 +96,16 @@ p {
 
 .container-image {
     width: 400px;
+    max-width: 90%;
     border: 1px solid $gray-lighter;
 }
 
-.img-padding{
-	padding-top: 30px;
-	padding-bottom: 30px;
+.img-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
 }
 
-.table tbody>tr>td.vert-align{
+.table tbody>tr>td.vert-align {
     vertical-align: middle;
 }
