@@ -30,6 +30,13 @@ p {
     margin: auto;
 }
 
+.navbar-title{
+      font-size: 18px;
+}
+.navbar-default .navbar-nav > li > a{
+    color:black;
+}
+
 @media (min-width: 768px) {
     .navbar-nav {
         width: 100%;
@@ -41,6 +48,7 @@ p {
     }
     .navbar {
         border-color: lighten($brand-success, 13.5%);
+        border-bottom-width:2px;
     }
 }
 
@@ -85,7 +93,13 @@ p {
     min-height: 730px;
 }
 
-#intro-carousel{
+@media all and (max-width: 634px) {
+    #intro {
+        min-height: 870px;
+    }
+}
+
+#intro-carousel {
     padding-top: 50px;
 }
 

@@ -8596,26 +8596,37 @@ p {
   margin: auto;
 }
 
+/* line 33, ../sass/styles.scss */
+.navbar-title {
+  font-size: 18px;
+}
+
+/* line 36, ../sass/styles.scss */
+.navbar-default .navbar-nav > li > a {
+  color: black;
+}
+
 @media (min-width: 768px) {
-  /* line 34, ../sass/styles.scss */
+  /* line 41, ../sass/styles.scss */
   .navbar-nav {
     width: 100%;
     text-align: center;
   }
 
-  /* line 38, ../sass/styles.scss */
+  /* line 45, ../sass/styles.scss */
   .navbar-nav > li {
     float: none;
     display: inline-block;
   }
 
-  /* line 42, ../sass/styles.scss */
+  /* line 49, ../sass/styles.scss */
   .navbar {
     border-color: #8ccd8c;
+    border-bottom-width: 2px;
   }
 }
 @media all and (min-width: 768px) {
-  /* line 48, ../sass/styles.scss */
+  /* line 56, ../sass/styles.scss */
   #navbar-contact {
     border: 2px solid #5cb85c;
     border-radius: 0px;
@@ -8626,7 +8637,7 @@ p {
     margin-top: 10px;
   }
 }
-/* line 59, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .ims-header {
   font-size: 48px;
   height: 180px;
@@ -8637,12 +8648,12 @@ p {
 }
 
 @media all and (min-width: 1180px) {
-  /* line 66, ../sass/styles.scss */
+  /* line 74, ../sass/styles.scss */
   .ims-header {
     font-size: 64px;
   }
 }
-/* line 71, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 .header-img {
   float: right;
   height: auto;
@@ -8650,56 +8661,62 @@ p {
   max-width: 100%;
 }
 
-/* line 78, ../sass/styles.scss */
+/* line 86, ../sass/styles.scss */
 .padding {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 83, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 #intro {
   height: 100vh;
   min-height: 730px;
 }
 
-/* line 88, ../sass/styles.scss */
+@media all and (max-width: 634px) {
+  /* line 97, ../sass/styles.scss */
+  #intro {
+    min-height: 870px;
+  }
+}
+/* line 102, ../sass/styles.scss */
 #intro-carousel {
   padding-top: 50px;
 }
 
 @media all and (max-width: 1180px) {
-  /* line 93, ../sass/styles.scss */
+  /* line 107, ../sass/styles.scss */
   .intro-body {
     font-size: 30px;
   }
 }
-/* line 98, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 #about,
 #sales,
 #contact {
   background: white;
 }
 
-/* line 104, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 .row {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-/* line 110, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 .container-image {
   width: 400px;
   max-width: 90%;
   border: 1px solid #eeeeee;
 }
 
-/* line 116, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .spec-image {
   max-width: 100%;
   border: 1px solid #777777;
 }
 
-/* line 121, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 .table tbody > tr > td.vert-align {
   vertical-align: middle;
 }
