@@ -4,6 +4,8 @@
 @import "bootstrap-variables";
 // Import Bootstrap for Sass
 @import "bootstrap";
+//Flexbox
+@import "compass/css3/flexbox";
 a {
     color: $brand-success;
 }
@@ -37,6 +39,9 @@ p {
         float: none;
         display: inline-block;
     }
+    .navbar {
+        border-color: lighten($brand-success, 13.5%);
+    }
 }
 
 @media all and (min-width: 768px) {
@@ -54,8 +59,7 @@ p {
 .ims-header {
     font-size: 48px;
     height: 180px;
-    display: flex;
-    align-items: center;
+    @include flexbox(( display: flex, align-items: center));
 }
 
 @media all and (min-width: 1180px) {
@@ -71,14 +75,18 @@ p {
     max-width: 100%;
 }
 
-.padding{
-	padding-top: 50px;
-	padding-bottom: 50px;
+.padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #intro {
     height: 100vh;
     min-height: 730px;
+}
+
+#intro-carousel{
+    padding-top: 50px;
 }
 
 @media all and (max-width: 1180px) {
@@ -105,10 +113,9 @@ p {
     border: 1px solid $gray-lighter;
 }
 
-.img-padding {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.spec-image {
     max-width: 100%;
+    border: 1px solid $gray-light;
 }
 
 .table tbody>tr>td.vert-align {
