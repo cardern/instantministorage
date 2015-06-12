@@ -8671,52 +8671,53 @@ p {
 #intro {
   height: 100vh;
   min-height: 730px;
+  margin-bottom: 30px;
 }
 
 @media all and (max-width: 634px) {
-  /* line 97, ../sass/styles.scss */
+  /* line 98, ../sass/styles.scss */
   #intro {
     min-height: 870px;
   }
 }
-/* line 102, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 #intro-carousel {
   padding-top: 50px;
 }
 
 @media all and (max-width: 1180px) {
-  /* line 107, ../sass/styles.scss */
+  /* line 108, ../sass/styles.scss */
   .intro-body {
     font-size: 30px;
   }
 }
-/* line 112, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 #about,
 #sales,
 #contact {
   background: white;
 }
 
-/* line 118, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 .row {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-/* line 124, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 .container-image {
   width: 400px;
   max-width: 90%;
   border: 1px solid #eeeeee;
 }
 
-/* line 130, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 .spec-image {
   max-width: 100%;
   border: 1px solid #777777;
 }
 
-/* line 135, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .table tbody > tr > td.vert-align {
   vertical-align: middle;
 }
